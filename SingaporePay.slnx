@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/docs/" />
+  <Folder Name="/infra/" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/Contracts/" />
+  <Folder Name="/src/Gateway/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/PaymentService/">
+    <Project Path="SingaporePay.PaymentService.API/SingaporePay.PaymentService.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/PaymentService/Application/">
+    <Project Path="SingaporePay.PaymentService.Application/SingaporePay.PaymentService.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/PaymentService/Domain/">
+    <Project Path="SingaporePay.PaymentService.Domain/SingaporePay.PaymentService.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/PaymentService/Infrastructure/">
+    <Project Path="SingaporePay.PaymentService.Infrastructure/SingaporePay.PaymentService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/SharedKernel/" />
+  <Folder Name="/tests/" />
+</Solution>

@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.db
+*.log
+.env
+node_modules/
+TestResults/
+coverage/
+*.nupkg
+*.cache
+*.dll
+*.exe
+appsettings.Development.json
+
