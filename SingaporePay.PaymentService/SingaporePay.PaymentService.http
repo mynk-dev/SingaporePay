@@ -1,6 +1,0 @@
-@SingaporePay.PaymentService_HostAddress = http://localhost:5043
-
-GET {{SingaporePay.PaymentService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
