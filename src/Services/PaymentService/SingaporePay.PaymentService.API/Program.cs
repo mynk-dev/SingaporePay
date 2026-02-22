@@ -33,6 +33,7 @@ builder.Services.AddTransient(
 
 var app = builder.Build();
 
+app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseMiddleware<GlobalExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Docker"))
