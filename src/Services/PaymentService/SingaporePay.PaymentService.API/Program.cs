@@ -2,6 +2,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.OpenApi;
 using SingaporePay.PaymentService.API.Endpoints;
+using SingaporePay.PaymentService.API.Idempotency;
 using SingaporePay.PaymentService.API.Middleware;
 using SingaporePay.PaymentService.Application.Behaviors;
 using SingaporePay.PaymentService.Application.Commands;
@@ -33,6 +34,7 @@ builder.Services.AddTransient(
 
 var app = builder.Build();
 
+app.UseMiddleware<IdempotencyMiddleware>();
 app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseMiddleware<RequestResponseLoggingMiddleware>();
 app.UseMiddleware<GlobalExceptionMiddleware>();
